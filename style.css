@@ -1,0 +1,71 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Mono:ital,wght@0,100..700;1,100..700&display=swap');
+
+:root{
+    --main-color-light:#f0f8ff;
+    --box-shadow-1: #ccd3d9;
+    --box-shadow-2:#ffffff;
+}
+
+
+* {
+	box-sizing: border-box;
+}
+
+html {
+	font-size: 62.5%;
+}
+
+body{
+    background-color: var(--main-color);
+    font-size: 1.6rem;
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.container{
+    text-align: center;
+    margin: auto;
+    width: 50%;
+    max-width: 800px;
+    font-family: "Roboto Mono", monospace;
+    background: var(--main-color);
+    box-shadow:  20px 20px 60px var(--box-shadow-1),
+            -20px -20px 60px var(--box-shadow-2);
+    padding: 2rem 5rem;
+    border-radius: 1rem;
+}
+
+.weather-now{
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+.weather-now img{
+    width: 15rem;
+}
+
+.weather-now .temperature{
+    font-size: 3rem;
+}
+
+.card-container{
+    display: flex;
+    justify-content: space-evenly;
+    text-align: center;
+}
+.card{
+    box-shadow: 6px 6px 10px var(--box-shadow-1),
+    -6px -6px 10px var(--box-shadow-1);
+    border-radius: 2rem;
+    font-size: 1.2rem;
+    padding: .5rem 3rem;
+}
+
+img{
+    filter: drop-shadow(2px 2px 2px rgba(0, 0, 0, 0.5)) drop-shadow(-2px -2px 2px rgba(0, 0, 0, 0.3));
+}
