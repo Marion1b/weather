@@ -2,18 +2,21 @@ function createLater(day, tempMax, tempMin, weather, toAppend){
     const card = document.createElement('div');
     card.className='card';
     toAppend.appendChild(card);
+    const left = document.createElement('div');
+    left.className='left-later';
+    card.appendChild(left)
     const date = document.createElement('p');
     date.className = "card-date";
     date.innerText = day;
-    card.appendChild(date)
+    left.appendChild(date);
     const temperatureMax  = document.createElement('p');
-    temperatureMax.innerText = tempMax + '°';
+    temperatureMax.innerText = 'max : ' + tempMax + '°';
     temperatureMax.className = "card-temp";
-    card.appendChild(temperatureMax);
+    left.appendChild(temperatureMax);
     const temperatureMin = document.createElement('p');
-    temperatureMin.innerText = tempMin + '°';
+    temperatureMin.innerText = 'min : ' + tempMin + '°';
     temperatureMin.className = "card-temp";
-    card.appendChild(temperatureMin);
+    left.appendChild(temperatureMin);
     const weatherImg = document.createElement('p');
     weatherImg.innerHTML = weather;
     card.appendChild(weatherImg);

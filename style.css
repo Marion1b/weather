@@ -38,6 +38,11 @@ body{
     padding: 2rem 5rem;
     border-radius: 1rem;
 }
+@media screen and (max-width:1000px){
+    .container{
+        width: 90%;
+    }
+}
 
 .weather-now{
     display: flex;
@@ -58,12 +63,34 @@ body{
     justify-content: space-evenly;
     text-align: center;
 }
+
+@media screen and (max-width:1000px) {
+    .card-container{
+        display: block;
+    }
+}
+
 .card{
     box-shadow: 6px 6px 10px var(--box-shadow-1),
     -6px -6px 10px var(--box-shadow-1);
     border-radius: 2rem;
     font-size: 1.2rem;
     padding: .5rem 3rem;
+}
+
+@media screen and (max-width:1000px){
+    .card{
+        margin: 2rem auto;
+        display: flex;
+        justify-content: space-around;
+    }
+    .card img{
+        width: 9rem;
+    }
+}
+
+.card-date{
+    font-weight: bold;
 }
 
 img{
